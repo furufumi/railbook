@@ -19,7 +19,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
-        <td><%= '日本' %></td>
+        <td><%= book.country %></td>
         <td><%= book.isbn %></td>
         <td><%= book.title %></td>
         <td><%= book.price %></td>
