@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+﻿<p id="notice"><%= notice %></p>
 
 <h1>Listing Books</h1>
 
@@ -26,7 +26,7 @@
         <td><%= book.cd %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm:"本当に「#{book.title}」を削除してよろしいですか？" } %></td>
       </tr>
     <% end %>
   </tbody>
