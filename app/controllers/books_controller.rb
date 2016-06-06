@@ -14,9 +14,7 @@
 
   # GET /books/new
   def new
-    @book = Book.new
-    @book.price = 0
-    @book.cd = true
+    @book = Book.new(book_params)
   end
 
   # GET /books/1/edit
