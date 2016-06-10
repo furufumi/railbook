@@ -1,0 +1,11 @@
+﻿<%= text_field :book,:title %></br>
+<%= number_field :book,:isbn %></br>
+<%= text_area :book,:memo %></br>
+<%= check_box :book, :cd,{},0,1 %></br>
+<%= radio_button :user, :color, "a" %>1番好きな本
+<%= radio_button :user, :color, "b" %>1番嫌いな本
+<%= radio_button :user, :color, "c" %>その他</br>
+<%= select :user,:address,["ニューヨーク","ロンドン","パリ"] %></br>
+<%= collection_select(:book,:publish,Publish.all, :id,:publishname) %></br>
+<%= link_to 'Edit', edit_book_path(book) %></br>
+<%= image_tag 'k.jpg' %>
