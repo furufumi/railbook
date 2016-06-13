@@ -14,7 +14,7 @@
 
   # GET /books/new
   def new
-    @book = Book.new(book_params)
+    @book = Book.new(price:0,cd:true)
   end
 
   # GET /books/1/edit
@@ -69,6 +69,6 @@
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:isbn, :title, :price , :publish, :published, :cd)
+      params.require(:book).permit(:isbn, :title, :price, :publish, :published, :cd )
     end
 end
