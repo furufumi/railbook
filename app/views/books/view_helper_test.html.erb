@@ -1,11 +1,17 @@
-﻿<%= text_field :book,:title %></br>
-<%= number_field :book,:isbn %></br>
-<%= text_area :book,:memo %></br>
-<%= check_box :book, :cd,{},0,1 %></br>
+﻿<p id="notice"><%= notice %></p>
+
+<h1>View Helper Test</h1>
+Title</br><%= text_field :book,:title %></br>
+Isbn</br><%= number_field :book,:isbn %></br>
+Free Space</br><%= text_area :book,:memo %></br>
+Cd</br><%= check_box :book, :cd,{},0,1 %></br>
 <%= radio_button :user, :color, "a" %>1番好きな本
 <%= radio_button :user, :color, "b" %>1番嫌いな本
 <%= radio_button :user, :color, "c" %>その他</br>
-<%= select :user,:address,["ニューヨーク","ロンドン","パリ"] %></br>
-<%= collection_select(:book,:publish,Publish.all, :id,:publishname) %></br>
-<%= link_to 'Edit', edit_book_path(book) %></br>
+Publish Address</br><%= select :user,:address,["ニューヨーク","ロンドン","パリ"] %></br>
+Publish</br><select id="book_publish" name="book[publish]">
+<option value="1">ルールル技術館</option>
+<option value="2">シンシン社</option>
+<option value="3">米ナビ</option></select></br>
+<%= link_to 'Back', books_path %></br>
 <%= image_tag 'k.jpg' %>
