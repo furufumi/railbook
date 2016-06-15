@@ -9,7 +9,7 @@ Cd</br><%= check_box :book, :cd,{},0,1 %></br>
 <%= radio_button :user, :color, "b" %>1番嫌いな本
 <%= radio_button :user, :color, "c" %>その他</br>
 Publish Address</br><%= select :user,:address,["ニューヨーク","ロンドン","パリ"] %></br>
-Publish</br><%= collection_select(:book, :publish, Publish.all, :id, :publishname) %>
+Publish</br><%= collection_select(:book, :publish, Book.all, :id, :publish) %>
 </br>
 <%= link_to 'Back', books_path %></br>
 <%= image_tag 'k.jpg' %>
