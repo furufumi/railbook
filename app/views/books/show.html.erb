@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+﻿<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Isbn:</strong>
@@ -29,6 +29,13 @@
   <strong>Cd:</strong>
   <%= @book.cd %>
 </p>
+
+<h2>評判</h2>
+<ul>
+<% @book.reviews.each do |review| %>
+  <li><%= review.body %></li>
+<% end %>
+</ul>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
