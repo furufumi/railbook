@@ -1,4 +1,5 @@
 ﻿Rails.application.routes.draw do
+  resources :users
   resources :reviews
   resources :publishes
   resources :books do

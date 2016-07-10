@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :publish_id %><br>
-    <%= f.collection_select(:publish_id, Publish.all, :id, :publishname) %>
+    <%= f.collection_select :publish_id, Publish.all, :id, :publishname %>
   </div>
   <div class="field">
     <%= f.label :published %><br>
