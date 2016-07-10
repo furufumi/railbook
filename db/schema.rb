@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160706012538) do
     t.string   "isbn"
     t.string   "title"
     t.integer  "price"
-    t.string   "publish"
+    t.string   "publish_id"
     t.date     "published"
     t.boolean  "cd"
     t.datetime "created_at", null: false
