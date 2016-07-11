@@ -33,7 +33,7 @@
 <h2>評判</h2>
 <ul>
 <% @book.reviews.each do |review| %>
-  <li><%= review.body %></li>
+  <li><%= review.body + "(" + review.user.username + ")" %></li>
 <% end %>
 </ul>
 

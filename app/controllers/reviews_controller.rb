@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+﻿class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
 
   # GET /reviews
@@ -69,6 +69,6 @@ class ReviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
-      params.require(:review).permit(:book_id, :body)
+      params.require(:review).permit(:user_id,:book_id, :body)
     end
 end
