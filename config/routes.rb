@@ -1,4 +1,8 @@
 ﻿Rails.application.routes.draw do
+  get 'login/index'
+
+  post 'login/auth'
+
   resources :users
   resources :reviews
   resources :publishes
